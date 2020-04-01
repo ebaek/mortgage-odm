@@ -1,0 +1,44 @@
+# Vocabulary Properties
+uuid = b636a49c-72c8-48f1-b945-3638b036fafb
+
+# mortgage.Applicant
+mortgage.Applicant#concept.label = applicant
+mortgage.Applicant.age#phrase.navigation = {age} of {this}
+mortgage.Applicant.citizenship#phrase.action = set the citizenship of {this} to {citizenship}
+mortgage.Applicant.citizenship#phrase.navigation = {citizenship} of {this}
+mortgage.Applicant.coBorrowers#phrase.action = set the co borrowers of {this} to {co borrower}
+mortgage.Applicant.coBorrowers#phrase.navigation = {co borrower} of {this}
+mortgage.Applicant.creditScore#phrase.navigation = {credit score} of {this}
+mortgage.Applicant.employerName#phrase.action = set the employer name of {this} to {employer name}
+mortgage.Applicant.employerName#phrase.navigation = {employer name} of {this}
+mortgage.Applicant.employmentStatus#phrase.action = set the employment status of {this} to {employment status}
+mortgage.Applicant.employmentStatus#phrase.navigation = {employment status} of {this}
+mortgage.Applicant.numLatePayments#phrase.navigation = {num late payments} of {this}
+mortgage.Applicant.purchasedProperty#phrase.action = set the purchased property of {this} to {purchased property}
+mortgage.Applicant.purchasedProperty#phrase.navigation = {purchased property} of {this}
+mortgage.Applicant.residency#phrase.action = set the residency of {this} to {residency}
+mortgage.Applicant.residency#phrase.navigation = {residency} of {this}
+mortgage.Applicant.setAge(java.lang.Integer)#phrase.action = set the age of {this} to {0}
+mortgage.Applicant.setCreditScore(java.lang.Integer)#phrase.action = set the credit score of {this} to {0}
+mortgage.Applicant.setNumLatePayments(java.lang.Integer)#phrase.action = set the num late payments of {this} to {0}
+mortgage.Applicant.state#phrase.action = set the state of {this} to {state}
+mortgage.Applicant.state#phrase.navigation = {state} of {this}
+
+# mortgage.Loan
+mortgage.Loan#concept.label = loan
+mortgage.Loan.amount#phrase.action = set the amount of {this} to {amount}
+mortgage.Loan.amount#phrase.navigation = {amount} of {this}
+mortgage.Loan.appraisedValue#phrase.action = set the appraised value of {this} to {appraised value}
+mortgage.Loan.appraisedValue#phrase.navigation = {appraised value} of {this}
+mortgage.Loan.approvalStatus#phrase.navigation = {approval status} of {this}
+mortgage.Loan.approved#phrase.action = make it {approved} that {this} is approved
+mortgage.Loan.approved#phrase.navigation = {this} is approved
+mortgage.Loan.loanToValue#phrase.action = set the loan to value of {this} to {loan to value}
+mortgage.Loan.loanToValue#phrase.navigation = {loan to value} of {this}
+mortgage.Loan.purpose#phrase.action = set the purpose of {this} to {purpose}
+mortgage.Loan.purpose#phrase.navigation = {purpose} of {this}
+mortgage.Loan.reject()#phrase.action = reject {this}
+mortgage.Loan.salesPrice#phrase.action = set the sales price of {this} to {sales price}
+mortgage.Loan.salesPrice#phrase.navigation = {sales price} of {this}
+mortgage.Loan.term#phrase.action = set the term of {this} to {term}
+mortgage.Loan.term#phrase.navigation = {term} of {this}

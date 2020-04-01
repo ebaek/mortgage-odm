@@ -1,0 +1,39 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/mortgage-rules//mortgage-xom"
+property uuid "71820a31-7f0b-4a7e-bf02-7ef14fa62956"
+package mortgage;
+
+
+public class Applicant
+{
+    public readonly int age;
+    public string citizenship;
+    public java.lang.String[] coBorrowers;
+    public readonly int creditScore;
+    public string employerName;
+    public string employmentStatus;
+    public readonly int numLatePayments;
+    public string purchasedProperty;
+    public string residency;
+    public string state;
+    public Applicant();
+    public void setAge(java.lang.Integer arg);
+    public void setCreditScore(java.lang.Integer arg);
+    public void setNumLatePayments(java.lang.Integer arg);
+}
+
+public class Loan
+{
+    public java.lang.Integer amount;
+    public java.lang.Float appraisedValue;
+    public readonly string approvalStatus;
+    public boolean approved;
+    public java.lang.Float loanToValue;
+    public string purpose;
+    public java.lang.Float salesPrice;
+    public string term;
+    public Loan();
+    public void reject();
+}
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>non citizen non occupant</name>
+  <uuid>3f21ec32-0cb1-4a80-a6c4-6a8e4633cfe1</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the citizenship of 'the applicant' does not contain "US" and the purchased property of 'the applicant' contains "Non-Owner Occupied"
+then reject 'the loan';]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

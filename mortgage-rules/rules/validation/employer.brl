@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>employer</name>
+  <uuid>dc42e2f1-e740-4933-9c25-8b3600b3f78e</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the employer name of 'the applicant' is empty and the employment status of 'the applicant' does not contain "Self-employed"
+then reject 'the loan';]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

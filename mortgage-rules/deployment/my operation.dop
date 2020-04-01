@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="my_operation" usingRuleflow="true" ruleflowName="mortgage-ruleflow" targetRuleProjectName="mortgage-rules">
+  <name>my operation</name>
+  <uuid>e60052c6-7a9b-46a7-ac51-13bbda36f3ff</uuid>
+  <referencedVariables variableName="applicant" variableSetName="parameters">
+    <variableSet href="../rules/parameters.var#58dc5850-f6a8-49d2-a8bd-dab2258608ae"/>
+  </referencedVariables>
+  <referencedVariables variableName="loan" variableSetName="parameters" direction="IN_OUT">
+    <variableSet href="../rules/parameters.var#58dc5850-f6a8-49d2-a8bd-dab2258608ae"/>
+  </referencedVariables>
+  <ruleflow href="../rules/mortgage-ruleflow.rfl#5eee73e3-77a9-4a4b-8e6a-639dab06f22b"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="my operation_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../mortgage-rules#4133f42f-c81b-45ce-ac13-38f3ca76cb1c"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>ltv minimum full time</name>
+  <uuid>45cac7e8-c447-422e-8524-e2b18be412bb</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[if the loan to value of 'the loan' is more than 0.90 and the employment status of 'the applicant' contains "Full-time Employed"
+then
+	reject 'the loan';]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

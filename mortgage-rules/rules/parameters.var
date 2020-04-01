@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:VariableSet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>parameters</name>
+  <uuid>58dc5850-f6a8-49d2-a8bd-dab2258608ae</uuid>
+  <variables name="applicant" type="mortgage.Applicant" initialValue="" verbalization="the applicant"/>
+  <variables name="loan" type="mortgage.Loan" initialValue="" verbalization="the loan"/>
+</ilog.rules.studio.model.base:VariableSet>
