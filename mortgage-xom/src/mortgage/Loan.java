@@ -8,6 +8,49 @@ public class Loan {
 	Float salesPrice;
 	boolean approved = true;
 	Float loanToValue;
+	String riskGrade;
+	Float baseRate;
+	Float minimumRate;
+	Float maximumRate;
+	Float adjustment;
+	Float finalRate;
+	
+	public String getRiskGrade() {
+		return riskGrade;
+	}
+	public void setRiskGrade(String riskGrade) {
+		this.riskGrade = riskGrade;
+	}
+	public Float getBaseRate() {
+		return baseRate;
+	}
+	public void setBaseRate(Float baseRate) {
+		this.baseRate = baseRate;
+	}
+	public Float getMinimumRate() {
+		return minimumRate;
+	}
+	public void setMinimumRate(Float minimumRate) {
+		this.minimumRate = minimumRate;
+	}
+	public Float getMaximumRate() {
+		return maximumRate;
+	}
+	public void setMaximumRate(Float maximumRate) {
+		this.maximumRate = maximumRate;
+	}
+	public Float getAdjustment() {
+		return adjustment;
+	}
+	public void setAdjustment(Float adjustment) {
+		this.adjustment = adjustment;
+	}
+	public Float getFinalRate() {
+		return finalRate;
+	}
+	public void setFinalRate(Float finalRate) {
+		this.finalRate = finalRate;
+	}
 	
 	public Float getLoanToValue() {
 		if( salesPrice > appraisedValue ) {

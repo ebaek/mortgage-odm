@@ -25,12 +25,18 @@ public class Applicant
 
 public class Loan
 {
+    public java.lang.Float adjustment;
     public java.lang.Integer amount;
     public java.lang.Float appraisedValue;
     public readonly string approvalStatus;
     public boolean approved;
+    public java.lang.Float baseRate;
+    public java.lang.Float finalRate;
     public java.lang.Float loanToValue;
+    public java.lang.Float maximumRate;
+    public java.lang.Float minimumRate;
     public string purpose;
+    public string riskGrade;
     public java.lang.Float salesPrice;
     public string term;
     public Loan();
