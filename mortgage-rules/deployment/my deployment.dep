@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <com.ibm.rules.studio.model.decisionservice:Deployment xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" ruleAppName="my_deployment" managingXom="true">
+  <eAnnotations source="ilog.rules.custom_properties">
+    <details key="Dep_Groups" value="rtsAdministrator"/>
+    <details key="Dep_SnapshotCreationKind" value="ALWAYS"/>
+  </eAnnotations>
   <name>my deployment</name>
   <uuid>6e6e64d5-1b2f-4b69-9a7f-f51979f53a3c</uuid>
   <targets label="my server"/>
   <operations operationName="my operation">
     <operation href="my%20operation.dop#e60052c6-7a9b-46a7-ac51-13bbda36f3ff"/>
+    <properties key="ruleset.bom.enabled">
+      <value><![CDATA[true]]></value>
+    </properties>
     <properties key="ruleset.version">
       <value><![CDATA[1.0]]></value>
     </properties>
-    <properties key="ruleset.bom.enabled">
+    <properties key="ruleset.debug.enabled">
       <value><![CDATA[true]]></value>
     </properties>
     <properties key="monitoring.enabled">
       <value><![CDATA[true]]></value>
     </properties>
     <properties key="ruleset.sequential.trace.enabled">
-      <value><![CDATA[true]]></value>
-    </properties>
-    <properties key="ruleset.debug.enabled">
       <value><![CDATA[true]]></value>
     </properties>
   </operations>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="my_operation" usingRuleflow="true" ruleflowName="mortgage-ruleflow" targetRuleProjectName="mortgage-rules">
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="my_operation" usingRuleflow="true" ruleflowName="mortgage-ruleflow" usingExtractor="true" targetRuleProjectName="mortgage-rules">
   <name>my operation</name>
   <uuid>e60052c6-7a9b-46a7-ac51-13bbda36f3ff</uuid>
-  <referencedVariables variableName="applicant" variableSetName="parameters">
+  <referencedVariables variableName="applicant" variableSetName="applicant">
     <variableSet href="../rules/parameters.var#58dc5850-f6a8-49d2-a8bd-dab2258608ae"/>
   </referencedVariables>
-  <referencedVariables variableName="loan" variableSetName="parameters" direction="IN_OUT">
+  <referencedVariables variableName="loan" variableSetName="loan" direction="IN_OUT">
     <variableSet href="../rules/parameters.var#58dc5850-f6a8-49d2-a8bd-dab2258608ae"/>
   </referencedVariables>
   <ruleflow href="../rules/mortgage-ruleflow.rfl#5eee73e3-77a9-4a4b-8e6a-639dab06f22b"/>

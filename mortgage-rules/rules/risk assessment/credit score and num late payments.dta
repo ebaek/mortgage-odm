@@ -2,201 +2,251 @@
 <ilog.rules.studio.model.dt:DecisionTable xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.dt="http://ilog.rules.studio/model/dt.ecore">
   <name>credit score and num late payments</name>
   <uuid>3e930c00-86d5-44ce-9aa2-8c1411d1d5c2</uuid>
+  <documentation><![CDATA[The risk grade is calculated by using a combination of the credit score and the number of times the borrower has been more than 30 days late in paying his mortgage in the past.]]></documentation>
   <locale>en_US</locale>
-  <definition>
-<DT Version="7.0" xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable">
-  <Body>
-    <Structure>
-      <ConditionDefinitions>
-        <ConditionDefinition Id="C0">
-          <ExpressionDefinition>
-            <Text/>
-          </ExpressionDefinition>
-        </ConditionDefinition>
-        <ConditionDefinition Id="C1">
-          <ExpressionDefinition>
-            <Text/>
-          </ExpressionDefinition>
-        </ConditionDefinition>
-        <ConditionDefinition Id="C2">
-          <ExpressionDefinition>
-            <Text/>
-          </ExpressionDefinition>
-        </ConditionDefinition>
-      </ConditionDefinitions>
-      <ActionDefinitions>
-        <ActionDefinition Id="A0">
-          <ExpressionDefinition>
-            <Text/>
-          </ExpressionDefinition>
-        </ActionDefinition>
-      </ActionDefinitions>
-    </Structure>
-    <Contents>
-      <Partition DefId="C0">
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-        <Condition>
-          <Expression/>
-          <ActionSet>
-            <Action DefId="A0">
-              <Expression/>
-            </Action>
-          </ActionSet>
-        </Condition>
-      </Partition>
-    </Contents>
-  </Body>
+  <definition><DT xmlns="http://schemas.ilog.com/Rules/7.0/DecisionTable">
+    <Body>
+<Structure>
+<ConditionDefinitions>
+<ConditionDefinition Id="C0">
+<ExpressionDefinition>
+<Text><![CDATA[the num late payments of 'the applicant' is <a number>]]></Text>
+</ExpressionDefinition>
+</ConditionDefinition>
+<ConditionDefinition Id="C1">
+<ExpressionDefinition>
+<Text><![CDATA[the credit score of 'the applicant' is <a number>]]></Text>
+</ExpressionDefinition>
+</ConditionDefinition>
+</ConditionDefinitions>
+<ActionDefinitions>
+<ActionDefinition Id="A0">
+<ExpressionDefinition>
+<Text><![CDATA[set the risk grade of 'the loan' to <a string>]]></Text>
+</ExpressionDefinition>
+</ActionDefinition>
+</ActionDefinitions>
+</Structure>
+<Contents>
+<Partition DefId="C0">
+<Condition>
+<Expression>
+<Param><![CDATA[0]]></Param>
+</Expression>
+<Partition DefId="C1">
+<Condition>
+<Expression>
+<Text><![CDATA[<a number> is at least <a number>]]></Text>
+<Param><![CDATA[700]]></Param>
+</Expression>
+<ActionSet>
+<Action DefId="A0">
+<Expression>
+<Param><![CDATA["AA+"]]></Param>
+</Expression>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression>
+<Text><![CDATA[<a number> is between <min> and <max>]]></Text>
+<Param><![CDATA[600]]></Param>
+<Param><![CDATA[699]]></Param>
+</Expression>
+<ActionSet>
+<Action DefId="A0">
+<Expression>
+<Param><![CDATA["AA"]]></Param>
+</Expression>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression>
+<Text><![CDATA[<a number> is between <min> and <max>]]></Text>
+<Param><![CDATA[500]]></Param>
+<Param><![CDATA[599]]></Param>
+</Expression>
+<ActionSet>
+<Action DefId="A0">
+<Expression>
+<Param><![CDATA["A"]]></Param>
+</Expression>
+</Action>
+</ActionSet>
+</Condition>
+</Partition>
+</Condition>
+<Condition>
+<Expression>
+<Param><![CDATA[1]]></Param>
+</Expression>
+<Partition DefId="C1">
+<Condition>
+<Expression>
+<Text><![CDATA[<a number> is at least <a number>]]></Text>
+<Param><![CDATA[700]]></Param>
+</Expression>
+<ActionSet>
+<Action DefId="A0">
+<Expression>
+<Param><![CDATA["B"]]></Param>
+</Expression>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression>
+<Text><![CDATA[<a number> is between <min> and <max>]]></Text>
+<Param><![CDATA[600]]></Param>
+<Param><![CDATA[699]]></Param>
+</Expression>
+<ActionSet>
+<Action DefId="A0">
+<Expression>
+<Param><![CDATA["C"]]></Param>
+</Expression>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression>
+<Text><![CDATA[<a number> is between <min> and <max>]]></Text>
+<Param><![CDATA[500]]></Param>
+<Param><![CDATA[599]]></Param>
+</Expression>
+<ActionSet>
+<Action DefId="A0">
+<Expression>
+<Param><![CDATA["CC"]]></Param>
+</Expression>
+</Action>
+</ActionSet>
+</Condition>
+</Partition>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+<Condition>
+<Expression/>
+<ActionSet>
+<Action DefId="A0">
+<Expression/>
+</Action>
+</ActionSet>
+</Condition>
+</Partition>
+</Contents>
+</Body>
+    <Resources DefaultLocale="en_US">
+<ResourceSet Locale="en_US">
+<Data Name="Definitions(A0)#HeaderText"><![CDATA[risk grade]]></Data>
+<Data Name="Definitions(C0)#HeaderText"><![CDATA[num late payments]]></Data>
+<Data Name="Definitions(C1)#HeaderText"><![CDATA[credit score]]></Data>
+</ResourceSet>
+</Resources>
 </DT>
 </definition>
 </ilog.rules.studio.model.dt:DecisionTable>

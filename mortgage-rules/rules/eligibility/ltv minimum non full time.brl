@@ -8,6 +8,5 @@
 		- the employment status of 'the applicant' is one of { "Self-employed", "Part-time Employed" } and the citizenship of 'the applicant' contains "US"
 		- the citizenship of 'the applicant' does not contain "US" 
 then
-	reject 'the loan';
-]]></definition>
+	reject 'the loan';]]></definition>
 </ilog.rules.studio.model.brl:ActionRule>
