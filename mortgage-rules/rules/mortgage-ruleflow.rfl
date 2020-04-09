@@ -4,7 +4,8 @@
   <uuid>5eee73e3-77a9-4a4b-8e6a-639dab06f22b</uuid>
   <locale>en_US</locale>
   <categories>any</categories>
-  <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+  <rfModel>
+<Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
   <Body>
     <TaskList>
       <StartTask Identifier="task_0"/>
